@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
     chef.roles_path     = 'kitchen/roles'
     chef.data_bags_path = 'kitchen/data_bags'
 
-    chef.custom_config_path = 'ssl_fix.chef'
+    chef.custom_config_path = 'kitchen/ssl_fix.chef'
 
     chef.add_role project_name
   end
